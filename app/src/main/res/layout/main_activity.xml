@@ -3,6 +3,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="@dimen/main_margin">
+
+
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_amount"/>
+
+    <EditText
+        android:id="@+id/txtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/main_txtAmount"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd">
+
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_fromCurrency"
+        android:layout_marginTop="@dimen/main_margin"/>
+
+    <RadioGroup
+        android:id="@+id/buttonFromCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/fromDollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_fromDollar"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/fromEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_fromEuro" />
+        <RadioButton
+            android:id="@+id/fromPound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_fromPound" />
+
+        <ImageView
+            android:id="@+id/fromLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_dollar"
+            android:padding="@dimen/main_margin"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/main_fromCurrencyLogo"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/toCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_toCurrency"
+        android:layout_marginTop="@dimen/main_margin"/>
+
+    <RadioGroup
+        android:id="@+id/buttonToCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/toDollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_toDollar" />
+        <RadioButton
+            android:id="@+id/toEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_toEuro"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/toPound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_toPound" />
+
+        <ImageView
+            android:id="@+id/toLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/main_margin"
+            android:src="@drawable/ic_euro"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/main_toCurrencyLogo"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnExchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_btnExchange"
+        android:layout_marginTop="@dimen/main_margin"/>
+
+
+
+
 
 </LinearLayout>

@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Exchange</string>
+    <string name="main_fromCurrencyLogo">From Logo</string>
+    <string name="main_fromPound">Pound</string>
+    <string name="main_fromEuro">Euro</string>
+    <string name="main_fromDollar">Dollar</string>
+    <string name="main_fromCurrency">From Currency</string>
+    <string name="main_amount">Amount</string>
+    <string name="main_toDollar">Dollar</string>
+    <string name="main_toEuro">Euro</string>
+    <string name="main_toPound">Pound</string>
+    <string name="main_toCurrencyLogo">to currency logo</string>
+    <string name="main_btnExchange">EXCHANGE</string>
+    <string name="main_toCurrency">To Currency</string>
 </resources>
